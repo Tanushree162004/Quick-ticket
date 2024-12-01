@@ -1,0 +1,229 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   QuickTicket
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     QuickTicket
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Events
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Travel
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto p-4">
+   <section class="text-center my-8">
+    <h2 class="text-3xl font-bold mb-4">
+     Welcome to <span class="uppercase">QuickTicket</span>
+    </h2>
+    <p class="text-lg mb-4">
+     Your one-stop solution for booking tickets to events and travel destinations in real-time.
+    </p>
+    <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="document.getElementById('booking-options').scrollIntoView({ behavior: 'smooth' });">
+     Start
+    </button>
+   </section>
+   <section class="my-8">
+    <h3 class="text-2xl font-bold mb-4">
+     Key Features
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-clock text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       Real-Time Availability
+      </h4>
+      <p>
+       Get up-to-the-minute updates on ticket availability.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-ticket-alt text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       Instant Booking
+      </h4>
+      <p>
+       Secure your tickets in real time with a seamless booking flow.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-user-friends text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       User-Friendly Interface
+      </h4>
+      <p>
+       Simple navigation for quick decision-making.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-credit-card text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       Multiple Payment Options
+      </h4>
+      <p>
+       Pay securely through various payment methods.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-bell text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       Personalized Alerts
+      </h4>
+      <p>
+       Receive push notifications for last-minute deals, booking confirmations, and event reminders.
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <i class="fas fa-map-marked-alt text-blue-600 text-3xl mb-2">
+      </i>
+      <h4 class="text-xl font-bold mb-2">
+       Event and Travel Recommendations
+      </h4>
+      <p>
+       Discover new events and destinations based on your preferences.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section id="booking-options" class="my-8">
+    <h3 class="text-2xl font-bold mb-4">
+     Booking Options
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Flight with an airplane taking off" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/0SEDViJzyiZnHVKnYokjjGaC2I4INUBtDFqLtoYRnx5Sho9E.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Flight Booking
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Flight Booking')">
+       Book Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Theater show with actors performing on stage" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/IPTRXoRhEnY0Px7qyjQ53UapifNgCWABIA4jOG5VkljnCR7JA.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Theater Show
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Theater Show')">
+       Book Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Concert event with a large crowd and stage lighting" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/CZR2pMUFfQVWNaMfVpOsrgsR3Zyb9S6fF0ZrdgBGtwXlKEtnA.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Live Concert
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Live Concert')">
+       Book Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Sports event with a stadium full of fans" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/8AqNgA1HGcJqINYzgn7nREoIn28W5WUjKb2UV5M9PfeMFi2TA.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Sports Event
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Sports Event')">
+       Book Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Bus travel with a scenic route" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/1shfAdcZBVzhCymLh5Z8oR4L9P28wJe2UEF5Nh6sb9nOFi2TA.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Bus Travel
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Bus Travel')">
+       Book Now
+      </button>
+     </div>
+     <div class="bg-white p-4 rounded shadow">
+      <img alt="Festival event with colorful decorations and crowd" class="w-full h-48 object-cover rounded mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/0kep2I6RrgS5ekkIMSuNUyRsW0tWHKHqCAEZsdSEBXCQFi2TA.jpg" width="300"/>
+      <h4 class="text-xl font-bold mb-2">
+       Festival
+      </h4>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="showBookingForm('Festival')">
+       Book Now
+      </button>
+     </div>
+    </div>
+   </section>
+   <section id="booking-form" class="hidden my-8">
+    <h3 class="text-2xl font-bold mb-4" id="booking-form-title">
+    </h3>
+    <form class="bg-white p-4 rounded shadow">
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+       Name
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" name="name" type="text" placeholder="Your Name"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" name="email" type="email" placeholder="Your Email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="details">
+       Details
+      </label>
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="details" name="details" placeholder="Your Requirements">
+      </textarea>
+     </div>
+     <div class="flex items-center justify-between">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+       Submit
+      </button>
+      <button class="bg-gray-600 text-white px-4 py-2 rounded" type="button" onclick="showMainPage()">
+       Return
+      </button>
+     </div>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2023 QuickTicket. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script src="tb.js"></script>
+  </script>
+ </body>
+</html>
